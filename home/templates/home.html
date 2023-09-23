@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div>
+        <p>Selecciona una Opción</p>
+        
+        <li class="nav-opciones">
+            <a class="nav-link-opciones" href="{% url 'pais_list' %}">Listado de Países</a>
+        </li>
+        <li class="nav-opciones">
+            <a class="nav-link-opciones" href="#">Listado de Departamentos</a> 
+        </li>
+        <li class="nav-opciones">
+            <a class="nav-link-opciones" href="#">Listado de Municipios</a>
+        </li>
+    </div>
+    
+{% endblock %}
+```
+</body>
+</html>
